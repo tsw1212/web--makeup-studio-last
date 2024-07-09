@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Varela Round';
+    src: url(../fonts/VarelaRound-Regular.ttf);
+    font-weight: 400;
+    font-size: normal;
+}
+
+html {
+    --nav-height: 20vh;
+    scroll-padding-top: var(--nav-height);
+}
+
+body {
+    box-sizing: border-box;
+    margin: auto;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Varela Round';
+    margin-top: var(--nav-height);
+
+}
+
+#smalllogo {
+    border-radius: 50em;
+    opacity: 0.8;
+    width: 10vw;
+    position: absolute;
+    top: 15vh;
+    left: 1vw;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0.01vh;
+    z-index: 5;
+}
+
+iframe {
+    width: 100%;
+    margin: 0;
+}
+
+footer iframe {
+    height: 13em;
+}
+
+@media only screen and (min-width: 413px) and (max-width: 800px) {
+
+    footer iframe {
+        height: 11em;
+    }
+
+}

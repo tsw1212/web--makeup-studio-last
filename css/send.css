@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    font-size: 2em;
+}
+
+div {
+    background-color: #fff;
+    opacity: 0.8;
+    margin: -4vw 15vw;
+    padding: 7vw;
+    border-radius: 2vw;
+}
+
+a {
+    color: rgb(50, 6, 34);
+    ;
+}
+
+@media(max-width:412px) {
+    div {
+        margin: -18vh 2vw;
+    }
+}

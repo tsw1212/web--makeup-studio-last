@@ -1,0 +1,226 @@
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(115, 85, 100);
+}
+
+#ourCourses,
+#details {
+    margin: 0 2vw 5vw;
+    padding: 2vw 3vw;
+    border-radius: 2vw;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+#courses {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    grid-template-areas: "a b c ";
+    background-color: #fff;
+}
+
+.eachcourse {
+    border: 0.5vw solid #ffe6e6;
+    padding: 0;
+    margin: 2vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25vw;
+    height: 80vh;
+
+}
+
+.eachcourse:hover {
+    background-color: rgb(241, 240, 241);
+    opacity: 0.7;
+}
+
+#profesionalCourse {
+    grid-area: a;
+    background-image: url(../images/profesionalCourse.jpg);
+}
+
+#phonOnline,
+#phonProfesional,
+#phonBasis {
+    display: none;
+    background-color: #ffe6e6;
+    border-radius: 1em;
+    font-size: 1.2em;
+    padding: 2vw;
+    margin: 2vw;
+}
+
+#basisCourse {
+    grid-area: b;
+    background-image: url(../images/basisCourse\ .jpg);
+}
+
+#onlineCourse {
+    grid-area: c;
+    background-image: url(../images/onlineCourse.jpg);
+}
+
+#courses div h3 {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(115, 85, 100);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-shadow: 1px 1px 10px #c89797;
+}
+
+table {
+    margin: 3vw;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: #ffe6e6;
+    padding-top: 3vw;
+    box-shadow: 0 0 1vw #ffe6e6;
+    border-radius: 1vw;
+    ;
+
+}
+
+td {
+    padding: 2vw;
+}
+
+.row:hover {
+    background-color: #fff;
+}
+
+th {
+    font-size: 1.7em;
+    color: rgb(115, 85, 100);
+}
+
+h3 {
+    font-size: 2em;
+    color: rgb(115, 85, 100);
+}
+
+.coursessilvus {
+    background-color: #fff;
+    opacity: 0.9;
+    margin: 1vw 5vw;
+    padding: 2vw;
+    border-radius: 1vw;
+    font-size: 1.5em;
+    width: 80vw;
+
+}
+
+.coursessilvus:hover {
+    background-color: rgb(241, 240, 241);
+    opacity: 0.9;
+}
+
+a {
+    color: rgb(115, 85, 100);
+    text-decoration-line: none;
+}
+
+#details {
+    margin-top: 5vw;
+}
+
+#imgNext1,
+#imgNext3 {
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 1em 1em;
+    border-radius: 0.5vw;
+}
+
+#imgNext2 {
+    float: right;
+    width: 50%;
+    height: auto;
+    margin: 1em 1em;
+    border-radius: 0.5vw;
+}
+
+th {
+    padding: 0.5em;
+}
+
+.ulRight {
+    text-align: right;
+}
+
+p {
+    text-align: justify;
+}
+
+@media(max-width: 412px) {
+    table {
+        display: none;
+    }
+
+    #phonOnline,
+    #phonProfesional,
+    #phonBasis {
+        display: block;
+    }
+
+    .eachcourse {
+        height: 30vh;
+    }
+
+    #ourCourses {
+        margin: -7vh 2vw 5vw;
+    }
+
+    .coursessilvus {
+        margin: 1vw 1vw;
+        padding: 2vw;
+        width: 90vw;
+    }
+
+    h3 {
+        margin: 0.5em auto 0;
+        text-align: center;
+    }
+
+    #imgNext1,
+    #imgNext2,
+    #imgNext3 {
+        float: none;
+        width: 87%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 413px) and (max-width: 800px) {
+    table {
+        display: none;
+    }
+
+    #phonOnline,
+    #phonProfesional,
+    #phonBasis {
+        display: block;
+        width: 70vw;
+        margin: 2vw auto;
+    }
+
+    .eachcourse {
+        height: 60vh;
+
+    }
+
+
+}

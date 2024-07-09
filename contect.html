@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/contectStyle.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.PNG">
+    <link href="./css/general.css" rel="stylesheet">
+    <title>Makeup-Studio יצירת קשר</title>
+</head>
+
+<body>
+    <header>
+        <iframe src="nav.html" title="nav page" frameborder="0"></iframe>
+    </header>
+
+    <main>
+        <form action="send.html">
+            <h1>השאירי את פרטייך, וניצור איתך קשר במהירות האפשרית!</h1><br>
+            <label for="name" class="titles"> שם</label><br>
+            <input id="name" class="noBorder" type="text" name="name" placeholder="שם" required autocomplete><br><br>
+            <label for="phon" class="titles">טלפון</label><br>
+            <input id="phon" class="noBorder" type="tel" name="phon" placeholder="טלפון" required autocomplete><br><br>
+            <label for="gmail" class="titles">כתובת מייל</label><br>
+            <input id="gmail" class="noBorder" type="email" name="gmail" placeholder="example@example.co.il" required
+                autocomplete dir="ltr"><br><br><br>
+
+
+            <label class="titles">על איזה נושא תרצי מענה?</label><br><br>
+            <div id="speakAbout">
+                <input type="checkbox" id="course1" name="subject" value="course1">
+                <label for="course1">הרשמה לקורס איפור מקצועי</label><br>
+                <input type="checkbox" id="course2" name="subject" value="course2">
+                <label for="course2">הרשמה לקורס איפור בסיסי</label><br>
+                <input type="checkbox" id="course3" name="subject" value="course3">
+                <label for="course3">הרשמה לקורס איפור אונליין</label><br>
+                <input type="checkbox" id="makeup" name="subject" value="makeup">
+                <label for="makeup">הזמנת איפור ערב</label><br>
+                <input type="checkbox" id="service" name="subject" value="service">
+                <label for="service">שירות לקוחות</label><br>
+                <input type="checkbox" id="diferent" name="subject" value="diferent">
+                <label for="diferent">אחר</label><br><br>
+            </div>
+            <label for="text" class="titles"> נשמח לשמוע מה יש לך לומר</label><br>
+            <textarea rows="7vw" cols="115vw" id="text1" name="text"></textarea>
+            <textarea rows="5vw" cols="70vw" id="text2" name="text"></textarea>
+            <textarea rows="4vw" cols="38vw" id="text3" name="text"></textarea><br><br>
+
+            <label class="titles">האם את מעוניינת לקבל מאיתנו טיפים מקצועיים והודעות על מבצעים שווים?</label><br>
+            <input type="radio" id="yes" name="advertisiment">
+            <label for="yes">כן, בטח!</label>
+            <input type="radio" id="no" name="advertisiment">
+            <label for="no">לא, תודה...</label><br><br>
+
+            <input type="submit" value="שליחה" id="buttom" class="titles">
+        </form>
+    </main>
+    <footer>
+        <iframe src="footer.html" title="footer page" frameborder="0"></iframe>
+    </footer>
+</body>
+
+</html>

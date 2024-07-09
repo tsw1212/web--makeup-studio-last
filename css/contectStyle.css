@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    color: rgb(50, 6, 34);
+}
+
+main {
+    font-size: 1.3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: #fff;
+    opacity: 0.8;
+    width: 70%;
+    border-radius: 2vw;
+    padding: 5vw;
+}
+
+#buttom {
+    width: 70vw;
+    height: 7vh;
+    background-color: #ffe6e6;
+    border: none;
+    font-size: 1.3em;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#buttom:hover {
+    background-color: #ebd5d5;
+}
+
+input {
+    font-size: 1.3em;
+}
+
+.titles {
+    font-weight: bold;
+    font-size: 1.35em;
+}
+
+#speakAbout {
+    margin: 0.7vw 23vw;
+    text-align: right;
+}
+
+.noBorder {
+    border-color: rgb(50, 6, 34);
+    border-width: 0em 0em 0.1em 0em;
+}
+
+#text2,
+#text3 {
+    display: none;
+}
+
+textarea {
+    margin: auto;
+}
+
+@media(max-width: 412px) {
+    main {
+        margin-top: -7vh;
+    }
+
+    #text1,
+    #text2 {
+        display: none;
+    }
+
+    #text3 {
+        display: block;
+    }
+
+    form {
+        width: 90%;
+        padding: 7vw 2vw;
+    }
+
+    #speakAbout {
+        margin: 0.7vw 7vw;
+    }
+
+}
+
+@media only screen and (min-width: 413px) and (max-width: 800px) {
+
+    #speakAbout {
+        margin: 0.7vw 15vw;
+
+    }
+
+    #text1,
+    #texe3 {
+        display: none;
+    }
+
+    #text2 {
+        display: block;
+    }
+
+}
